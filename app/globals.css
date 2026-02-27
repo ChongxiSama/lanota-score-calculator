@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --md-sys-color-primary: #4C662B;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #CDEDA3;
+  --md-sys-color-on-primary-container: #102000;
+  --md-sys-color-secondary: #586249;
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-secondary-container: #DCE7C8;
+  --md-sys-color-on-secondary-container: #151E0B;
+  --md-sys-color-background: #FDFDF5;
+  --md-sys-color-on-background: #1A1C18;
+  --md-sys-color-surface: #FDFDF5;
+  --md-sys-color-surface-container-low: #F6F8EE;
+  --md-sys-color-surface-container: #F0F2E8;
+  --md-sys-color-surface-container-high: #EBEEE4;
+  --md-sys-color-outline: #75796C;
+  --md-sys-color-outline-variant: #C5C8BA;
+  --judge-harmony: #725C00;
+  --judge-harmony-container: #FFDF9E;
+  --judge-on-harmony-container: #251A00;
+  --judge-tune: #00639B;
+  --judge-tune-container: #CEE5FF;
+  --judge-on-tune-container: #001D32;
+  --judge-fail: #5E5E62;
+  --judge-fail-container: #E2E2E6;
+  --judge-on-fail-container: #1A1C1E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #B1D18A;
+    --md-sys-color-on-primary: #1F3701;
+    --md-sys-color-primary-container: #354E16;
+    --md-sys-color-on-primary-container: #CDEDA3;
+    --md-sys-color-secondary: #BFCBAD;
+    --md-sys-color-on-secondary: #2A331E;
+    --md-sys-color-secondary-container: #404A33;
+    --md-sys-color-on-secondary-container: #DCE7C8;
+    --md-sys-color-background: #121410;
+    --md-sys-color-on-background: #E2E3DD;
+    --md-sys-color-surface: #121410;
+    --md-sys-color-surface-container-low: #1A1C18;
+    --md-sys-color-surface-container: #1E201C;
+    --md-sys-color-surface-container-high: #282B26;
+    --md-sys-color-outline: #8F9285;
+    --md-sys-color-outline-variant: #44483D;
+    --judge-harmony: #EBC248; 
+    --judge-harmony-container: #594400; 
+    --judge-on-harmony-container: #FFDF9E;
+    --judge-tune: #97CBFF;
+    --judge-tune-container: #004A75;
+    --judge-on-tune-container: #CEE5FF;
+    --judge-fail: #C6C6CA;
+    --judge-fail-container: #444749;
+    --judge-on-fail-container: #E2E2E6;
+  }
+}
+
+@theme inline {
+  --color-background: var(--md-sys-color-background);
+  --color-foreground: var(--md-sys-color-on-background);
+  --color-primary: var(--md-sys-color-primary);
+  --color-on-primary: var(--md-sys-color-on-primary);
+  --color-primary-container: var(--md-sys-color-primary-container);
+  --color-on-primary-container: var(--md-sys-color-on-primary-container);
+  --color-secondary: var(--md-sys-color-secondary);
+  --color-on-secondary: var(--md-sys-color-on-secondary);
+  --color-secondary-container: var(--md-sys-color-secondary-container);
+  --color-on-secondary-container: var(--md-sys-color-on-secondary-container);
+  --color-surface: var(--md-sys-color-surface);
+  --color-surface-container: var(--md-sys-color-surface-container);
+  --color-surface-container-low: var(--md-sys-color-surface-container-low);
+  --color-surface-container-high: var(--md-sys-color-surface-container-high);
+  --color-outline: var(--md-sys-color-outline);
+  --color-outline-variant: var(--md-sys-color-outline-variant);
+  --color-harmony: var(--judge-harmony);
+  --color-harmony-container: var(--judge-harmony-container);
+  --color-on-harmony-container: var(--judge-on-harmony-container);
+  --color-tune: var(--judge-tune);
+  --color-tune-container: var(--judge-tune-container);
+  --color-on-tune-container: var(--judge-on-tune-container);
+  --color-fail: var(--judge-fail);
+  --color-fail-container: var(--judge-fail-container);
+  --color-on-fail-container: var(--judge-on-fail-container);
+  --ease-emphasized: cubic-bezier(0.2, 0.0, 0, 1.0);
+}
+
+body {
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  transition: background-color 0.5s var(--ease-emphasized), color 0.5s var(--ease-emphasized);
+  font-family: 'Google Sans', 'Product Sans', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, button, .font-google-sans {
+  font-family: 'Google Sans', 'Product Sans', 'Noto Sans SC', sans-serif;
+}

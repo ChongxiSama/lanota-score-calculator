@@ -1,0 +1,20 @@
+{
+  "name": "Lanota 分数计算器",
+  "short_name": "Lanota Calc",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFDF5",
+  "theme_color": "#4C662B",
+  "icons": [
+    {
+      "src": "https://blog.chongxi.us/images/xi.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "https://blog.chongxi.us/images/xi.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
